@@ -120,22 +120,23 @@ fun TataletakBoxColumnRow(modifier: Modifier) {
                 ),
             contentAlignment = Alignment.Center
         ) {
-            Column() {
+            Column(modifier = Modifier.padding(vertical = 16.dp)) {
                 Row(
                     modifier = modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.SpaceEvenly
                 ) {
-                    Text(text = "Col1_Row1_Komponen1")
-                    Text(text = "Col1_Row1_Komponen2")
-                    Text(text = "Col1_Row1_Komponen3")
+                    Text(text = "Col1_Row1_Komponen1", style = MaterialTheme.typography.bodyLarge)
+                    Text(text = "Col1_Row1_Komponen2", style = MaterialTheme.typography.bodyLarge)
+                    Text(text = "Col1_Row1_Komponen3", style = MaterialTheme.typography.bodyLarge)
                 }
+                Spacer(Modifier.height(8.dp))
                 Row(
                     modifier = modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.SpaceEvenly
                 ) {
-                    Text(text = "Col1_Row2_Komponen1")
-                    Text(text = "Col1_Row2_Komponen2")
-                    Text(text = "Col1_Row2_Komponen3")
+                    Text(text = "Col1_Row2_Komponen1", style = MaterialTheme.typography.bodyMedium, color = Color.Gray)
+                    Text(text = "Col1_Row2_Komponen2", style = MaterialTheme.typography.bodyMedium, color = Color.Gray)
+                    Text(text = "Col1_Row2_Komponen3", style = MaterialTheme.typography.bodyMedium, color = Color.Gray)
                 }
             }
         }
