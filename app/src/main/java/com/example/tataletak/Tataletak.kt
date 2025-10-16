@@ -1,6 +1,6 @@
 package com.example.tataletak
 
-import android.R
+import com.example.tataletak.R
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -99,7 +99,7 @@ fun TataletakRowColumn(modifier: Modifier) {
 }
 @Composable
 fun TataletakBoxColumnRow(modifier: Modifier) {
-    val gambar painterResource(id = R.drawable.notasibalok)
+    val gambar = painterResource(id = R.drawable.sertif)
     Column {
         Box(
             modifier = modifier
